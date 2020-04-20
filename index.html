@@ -5,18 +5,34 @@
     <title>Laura Groetzinger Portfolio</title>
   </head>
   <body>
-
-    <div id="navigation"></div>
-    <div class="container">
-        <h2>Laura Groetzinger</h2>
-        <p>Product and Design Leader</p>
-        <div id="like_button_container"></div>
+    <div class="landing-page">
+      <div class="row image">
+        <div class="navigation">
+          <ul>
+            <li>my work</li>
+            <li>my resume</li>
+            <li>my sidegig</li>
+            <li>my digits</li>
+          </ul>
+        </div>
+        <div class="text-holder">
+          <a class="work-link">collabs by selfmade</a>
+          <a class="work-link">justworks</a>
+          <a class="work-link">selfmade 2.0</a>
+          <a class="work-link">selfmade 1.0</a>
+          <a class="work-link">chloe + isabel</a>
+          <a class="work-link">yipit</a>
+          <a class="work-link">seatgeek</a>
+        </div>
+      </div>
     </div>
     
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Open+Sans&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>  
 
     <!-- Load our React component. -->
     <script src="like_button.js"></script>

@@ -1,0 +1,63 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1;
+    margin: 0;  
+}
+
+/* @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+    .row.image {
+        background-image: url("img/Landing-top@2x.png");
+    }
+
+} */
+
+.landing-page {
+    background-color: #08202A;
+}
+.row.image {
+    background-image: url("img/Landing-top@2x.png");
+    background-position: left 100% 0;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    z-index: auto;
+    display: block;
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    position: relative; 
+}
+
+.work-link {
+    font-size: 50px;
+    display: block;
+    line-height: 70px;
+}
+.work-link:hover {
+    color: #fff;
+}
+.navigation {
+    position: fixed;
+    z-index: 100;
+    color: #fff;
+    font-size: 20px;
+    height: 100px;
+    vertical-align: bottom;
+    float: right;
+    position: relative;
+}
+.navigation ul {
+    list-style: none;
+}
+.text-holder {
+    color: #B5F44B;
+    padding: 0 50px;
+    float: right;
+}

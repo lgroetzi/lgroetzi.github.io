@@ -1,0 +1,20 @@
+{
+  "name": "lgroetzi.github.io",
+  "version": "1.0.0",
+  "description": "New portfolio 2020 baby",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgroetzi/lgroetzi.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lgroetzi/lgroetzi.github.io/issues"
+  },
+  "homepage": "https://github.com/lgroetzi/lgroetzi.github.io#readme"
+}
