@@ -114,16 +114,12 @@ function Menu() {
 const TopBarContainer = styled.div`
   display: flex;
   flex-direction: row;
-`;
-
-const EmptySpace = styled.div`
-  width: 50%;
+  justify-content: end;
 `;
 
 function TopBar() {
   return (
     <TopBarContainer>
-      <EmptySpace />
       <Menu />
     </TopBarContainer>
   );
