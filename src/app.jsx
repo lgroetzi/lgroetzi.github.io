@@ -4,14 +4,19 @@ import Picture from './img/Landing-top.png';
 
 /* ---- My Work Section ---- */
 
-const MyWorkListItem = styled.li`
+const MyWorkLink = styled.a`
   font-family: Cabin;
   font-style: normal;
   font-weight: bold;
   font-size: 80px;
   line-height: 110px;
   letter-spacing: 0.833333px;  /* or 137% */
+  text-decoration: none;
+
   color: #B5F44B;
+  &.white {
+    color: #ffffff;
+  }
 `;
 
 const MyWorkContainer = styled.ul`
@@ -49,10 +54,10 @@ function MyWork() {
       <PictureContainer><img src={Picture} /></PictureContainer>
       <MyWorkContainer>
         <ul>
-          <MyWorkListItem>collabs</MyWorkListItem>
-          <MyWorkListItem>justworks</MyWorkListItem>
-          <MyWorkListItem>selfmade1.0</MyWorkListItem>
-          <MyWorkListItem>selfmade2.0</MyWorkListItem>
+          <li><MyWorkLink href="#colabs">collabs</MyWorkLink></li>
+          <li><MyWorkLink href="#justworks">justworks</MyWorkLink></li>
+          <li><MyWorkLink href="#selfmade1.0" className="white">selfmade1.0</MyWorkLink></li>
+          <li><MyWorkLink href="#selfmade2.0" className="white">selfmade2.0</MyWorkLink></li>
         </ul>
       </MyWorkContainer>
     </MyWorkShell>
