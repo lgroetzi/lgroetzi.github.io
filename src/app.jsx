@@ -69,20 +69,40 @@ const MenuLink = styled.a`
   line-height: 20px;
   text-align: right;
   color: #FFFFFF;
+  text-decoration: none;
+  padding-bottom: 8px;
+
+  &.active {
+    border-bottom: solid 4px #b5f44b;
+  }
 `;
 
-const MenuList = styled.ul`
-  display: flex;
-  flex-direction: row;
+const MenuContainer = styled.div`
+  width: 50%;
+  background-color: #08202a;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: end;
+    padding: 0;
+
+    li {
+      margin-right: 35px;
+    }
+  }
 `;
 
 function Menu() {
   return (
-    <MenuList>
-      <li><MenuLink href="#work">my work</MenuLink></li>
-      <li><MenuLink href="#resume">my resume</MenuLink></li>
-      <li><MenuLink href="#sidegig">my side gig</MenuLink></li>
-    </MenuList>
+    <MenuContainer>
+      <ul>
+        <li><MenuLink href="#work" className="active">my work</MenuLink></li>
+        <li><MenuLink href="#resume">my resume</MenuLink></li>
+        <li><MenuLink href="#sidegig">my side gig</MenuLink></li>
+      </ul>
+    </MenuContainer>
   );
 }
 
