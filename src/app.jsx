@@ -77,7 +77,7 @@ const MenuLink = styled.a`
   text-decoration: none;
   padding-bottom: 8px;
 
-  &.active {
+  &.active, &:hover {
     border-bottom: solid 4px #b5f44b;
   }
 `;
