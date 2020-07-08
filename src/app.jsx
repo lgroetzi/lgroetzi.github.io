@@ -145,17 +145,15 @@ function Collabs() {
     <div className="project-page">
       <TopBar Wrapper={LightBGMenu} />
 
-      <div className="project-shell">
-        <div className="project-glamourshot">
-          <div>
-            <h1>Collabs by SelfMade</h1>
-            <div className="project-subtitle">
-              My Role: <strong>VP of Product</strong>
-            </div>
+      <div className="project-glamourshot">
+        <div>
+          <h1>Collabs by SelfMade</h1>
+          <div className="project-subtitle">
+            My Role: <strong>VP of Product</strong>
           </div>
-
-          <img src={Placeholder} />
         </div>
+
+        <img src={Placeholder} />
       </div>
 
       <div className="project-feat">
