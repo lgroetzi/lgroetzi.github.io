@@ -54,7 +54,7 @@ export default function MyWork() {
   return (
     <div>
       <Head title="Laura Groetzinger" />
-      <DarkMenu />
+      <DarkMenu active="index" />
       <MyWorkShell>
         <PictureContainer><img src="/img/Landing-top.png" /></PictureContainer>
         <MyWorkContainer>

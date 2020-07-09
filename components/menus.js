@@ -2,6 +2,55 @@ import * as React from "react";
 import styled from 'styled-components';
 import Link from 'next/link';
 
+const DarkBGMenu = styled.div`
+  width: 50%;
+  background-color: #08202a;
+
+  & a {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  & a.active, & a:hover {
+    border-bottom: solid 4px #b5f44b;
+  }
+`;
+
+export function DarkMenu({ active }) {
+  return (
+    <TopBarContainer>
+      <DarkBGMenu>
+        <Menu active={active} />
+      </DarkBGMenu>
+    </TopBarContainer>
+  );
+}
+
+const LightBGMenu = styled.div`
+  width: 50%;
+  background-color: transparent;
+
+  & a {
+    color: #08202a;
+  }
+`;
+
+export function LightMenu({ active }) {
+  return (
+    <TopBarContainer>
+      <LightBGMenu>
+        <Menu active={active} />
+      </LightBGMenu>
+    </TopBarContainer>
+  );
+}
+
+const TopBarContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+`;
+
 const MenuLink = styled.a`
   font-family: Open Sans;
   font-style: normal;
@@ -23,57 +72,34 @@ const MenuList = styled.ul`
 
   li {
     margin-left: 35px;
+    height: 35px;
   }
 `;
 
-const DarkBGMenu = styled.div`
-  width: 50%;
-  background-color: #08202a;
-
-  & a.active, & a:hover {
-    border-bottom: solid 4px #b5f44b;
-  }
-`;
-
-const LightBGMenu = styled.div`
-  width: 50%;
-  background-color: transparent;
-
-  & a {
-    color: #08202a;
-  }
-`;
-
-function Menu({ Wrapper }) {
+function Menu({ active }) {
   return (
-    <Wrapper>
-      <MenuList>
-        <li>
-          <Link href="/">
-            <MenuLink>my work</MenuLink>
-          </Link>
-        </li>
-        <li><MenuLink href="#resume">my resume</MenuLink></li>
-        <li><MenuLink href="#sidegig">my side gig</MenuLink></li>
-      </MenuList>
-    </Wrapper>
+    <MenuList>
+      <li>
+        <Link href="/">
+          <MenuLink className={active == "index" ? "active" : null}>
+            my work
+          </MenuLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="/resume">
+          <MenuLink className={active == "resume" ? "active" : null}>
+            my resume
+          </MenuLink>
+        </Link>
+      </li>
+      <li>
+        <Link href="/sidegig">
+          <MenuLink className={active == "sidegig" ? "active" : null}>
+            my side gig
+          </MenuLink>
+        </Link>
+      </li>
+    </MenuList>
   );
 }
-
-const TopBarContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-`;
-
-function TopBar({ Wrapper }) {
-  return (
-    <TopBarContainer>
-      <Menu Wrapper={Wrapper} />
-    </TopBarContainer>
-  );
-}
-
-export const DarkMenu = () => <TopBar Wrapper={DarkBGMenu} />
-
-export const LightMenu = () => <TopBar Wrapper={LightBGMenu} />
