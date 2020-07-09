@@ -38,12 +38,20 @@ const LightBGMenu = styled.div`
 export function LightMenu({ active }) {
   return (
     <TopBarContainer>
+      <Logo>
+        <img src="/img/logo.svg" />
+      </Logo>
       <LightBGMenu>
         <Menu active={active} />
       </LightBGMenu>
     </TopBarContainer>
   );
 }
+
+const Logo = styled.div`
+  width: 50%;
+  margin: 35px 0 0 90px;
+`;
 
 const TopBarContainer = styled.div`
   display: flex;
