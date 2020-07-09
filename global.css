@@ -49,9 +49,6 @@ body {
 .project-glamourshot img {
     display: block;
     margin-top: 95px;
-    width: 677px;
-    height: 464px;
-    box-shadow: 0px 10px 40px #bbb;
 }
 
 .project-feat {
@@ -63,16 +60,13 @@ body {
 .project-feat img {
     display: block;
     margin: 0 auto;
-    width: 1104px;
-    height: 690px;
-    box-shadow: 0px 10px 40px #bbb;
 }
 
 .project-details {
     background: linear-gradient(90deg, #c0d9dd 50%, #f2f2f2 50%);
     display: flex;
     flex-direction: row;
-    height: 658px;
+    /* height: 658px; */
     padding-top: 260px;
 }
 .project-details.no-bg {
