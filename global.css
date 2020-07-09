@@ -49,6 +49,7 @@ body {
 .project-glamourshot img {
     display: block;
     margin-top: 95px;
+    height: 528px;
 }
 
 .project-feat {

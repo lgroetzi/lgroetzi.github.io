@@ -33,7 +33,7 @@ export default function Collabs() {
         </div>
       </Details>
 
-      <Feat src="/img/Collabs-4.png" />
+      <Feat img="/img/Collabs-4.png" />
 
       <Details>
         <div>
