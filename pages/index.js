@@ -45,6 +45,7 @@ const PictureContainer = styled.div`
   text-align: center;
   overflow: hidden;
   img {
+    margin-top: -35px;
     width: 638px;
     height: 800px;
   }
@@ -53,10 +54,12 @@ const PictureContainer = styled.div`
 export default function MyWork() {
   return (
     <div>
-      <Head title="Laura Groetzinger" />
+      <Head title="Laura Groetzinger Portfolio" />
       <DarkMenu active="index" />
       <MyWorkShell>
-        <PictureContainer><img src="/img/Landing-top.png" /></PictureContainer>
+        <PictureContainer>
+          <img src="/img/Landing-top.png" />
+        </PictureContainer>
         <MyWorkContainer>
           <ul>
             <li>
