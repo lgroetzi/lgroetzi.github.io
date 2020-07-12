@@ -32,6 +32,7 @@ const LightBGMenu = styled.div`
 
   & a {
     color: #08202a;
+    cursor: pointer;
   }
 
   & a:hover {
