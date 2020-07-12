@@ -23,7 +23,9 @@ export default function Justworks() {
 
       <div className="project-details">
         <div>
-          <img src="/img/JW-3@2x.png" />
+          <img
+            width="387px"
+            src="/img/JW-3@2x.png" />
         </div>
 
         <div>
