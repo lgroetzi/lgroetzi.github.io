@@ -10,7 +10,7 @@ export function GlamourShot({ title, role, img }) {
         </div>
       </div>
 
-      <img src={img} />
+      <img src={img} className="box-shadow"/>
     </div>
   );
 }
@@ -18,7 +18,7 @@ export function GlamourShot({ title, role, img }) {
 export function Feat({ img, style }) {
   return (
     <div className="project-feat" style={ style || {} }>
-      <img src={img} />
+      <img src={img} className="box-shadow"/>
     </div>
   );
 }

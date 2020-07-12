@@ -40,6 +40,7 @@ export default function Collabs() {
       <Details className="no-bg">
         <div style={{ textAlign: "right", margin: "30px 162px 100px 18px" }}>
           <img
+            className="box-shadow"
             width="387px"
             height="660px"
             src="/img/Collabs-5@2x.png" />
