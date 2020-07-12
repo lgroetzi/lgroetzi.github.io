@@ -101,15 +101,23 @@ function Menu({ active }) {
       </li>
       <li>
         <Link href="/resume">
-          <MenuLink className={active == "resume" ? "active" : null}>
+          <MenuLink
+            className={active == "resume" ? "active" : null}
+            href="https://www.linkedin.com/in/laura-groetzinger-b0857b21/"
+            target="_blank"
+          >
             my resume
           </MenuLink>
         </Link>
       </li>
       <li>
         <Link href="/sidegig">
-          <MenuLink className={active == "sidegig" ? "active" : null}>
-            my side gig
+          <MenuLink
+            className={active == "sidegig" ? "active" : null}
+            href="https://www.instagram.com/pinkandsalt/"
+            target="_blank"
+          >
+             my side gig
           </MenuLink>
         </Link>
       </li>
