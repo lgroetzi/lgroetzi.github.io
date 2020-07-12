@@ -13,6 +13,11 @@ export default function Justworks() {
         img="/img/JW-1@2x.png"
       />
 
+      <div>
+        <img
+          width="100%"
+          src="/img/JW-6@2x.png" />
+      </div>
       <Feat img="/img/JW-2@2x.png" />
 
       <div className="project-details">
