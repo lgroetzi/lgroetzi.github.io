@@ -15,9 +15,9 @@ export function GlamourShot({ title, role, img }) {
   );
 }
 
-export function Feat({ img }) {
+export function Feat({ img, style }) {
   return (
-    <div className="project-feat">
+    <div className="project-feat" style={ style || {} }>
       <img src={img} />
     </div>
   );
