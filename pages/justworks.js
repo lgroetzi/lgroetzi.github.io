@@ -1,25 +1,19 @@
 import * as React from "react";
 import { LightMenu } from '../components/menus';
+import { GlamourShot, Feat } from '../components/project'
 
 export default function Justworks() {
   return (
     <div className="project-page">
       <LightMenu />
 
-      <div className="project-glamourshot">
-        <div>
-          <h1>Justworks</h1>
-          <div className="project-subtitle">
-            My Role: <strong>Product Designer</strong>
-          </div>
-        </div>
+      <GlamourShot
+        title="Justworks"
+        role="Product Designer"
+        img="/img/JW-1@2x.png"
+      />
 
-        <img src="/img/JW-1@2x.png" />
-      </div>
-
-      <div className="project-feat">
-        <img src="/img/JW-2@2x.png" />
-      </div>
+      <Feat img="/img/JW-2@2x.png" />
 
       <div className="project-details">
         <div>
@@ -46,8 +40,11 @@ export default function Justworks() {
         <img src="/img/JW-4@2x.png" />
       </div>
 
-      <div className="project-details no-bg">
+      <div className="project-details no-bg ">
         <div>
+          <img
+            width="572px"
+            src="/img/JW-5@2x.png" />
         </div>
 
         <div>
@@ -63,6 +60,14 @@ export default function Justworks() {
           </p>
         </div>
       </div>
+      
+      <div>
+        <img
+          width="100%"
+          src="/img/JW-6@2x.png" />
+      </div>
+
+      <Feat img="/img/JW-7@2x.png" />
 
       <div className="project-next">
         <a href="#">View Next Project</a>
