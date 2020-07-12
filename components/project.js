@@ -25,7 +25,7 @@ export function Feat({ img, style }) {
 
 export function Details(props) {
   return (
-    <div className="project-details">
+    <div className={`project-details ${props.className || ''}`}>
       {props.children}
     </div>
   );

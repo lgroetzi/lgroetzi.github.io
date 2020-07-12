@@ -16,7 +16,7 @@ export default function Collabs() {
       <Feat img="/img/Collabs-2@2x.png" />
       
       <Details>
-        <div style={{ textAlign: "right" }}>
+        <div style={{ textAlign: "right", margin: "50px 110px 0 80px" }}>
           <img
             width="465px"
             src="/img/Collabs-3@2x.png" />
@@ -37,10 +37,11 @@ export default function Collabs() {
 
       <Feat img="/img/Collabs-4@2x.png" style={{ height: "788px" }} />
 
-      <Details>
-        <div style={{ textAlign: "right" }}>
+      <Details className="no-bg">
+        <div style={{ textAlign: "right", margin: "30px 162px 100px 18px" }}>
           <img
             width="387px"
+            height="660px"
             src="/img/Collabs-5@2x.png" />
         </div>
 

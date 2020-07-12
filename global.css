@@ -73,9 +73,9 @@ body {
     background: linear-gradient(90deg, #c0d9dd 50%, #f2f2f2 50%);
     display: flex;
     flex-direction: row;
-    /* height: 658px; */
     padding-top: 260px;
 }
+
 .project-details.no-bg {
     background: white;
 }
