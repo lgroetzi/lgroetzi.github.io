@@ -14,16 +14,16 @@ export default function Justworks() {
           </div>
         </div>
 
-        <img src="/img/JW-1.png" />
+        <img src="/img/JW-1@2x.png" />
       </div>
 
       <div className="project-feat">
-        <img src="/img/JW-2.png" />
+        <img src="/img/JW-2@2x.png" />
       </div>
 
       <div className="project-details">
         <div>
-          <img src="/img/JW-3.png" />
+          <img src="/img/JW-3@2x.png" />
         </div>
 
         <div>
@@ -41,7 +41,7 @@ export default function Justworks() {
       </div>
 
       <div className="project-feat">
-        <img src="/img/JW-4.png" />
+        <img src="/img/JW-4@2x.png" />
       </div>
 
       <div className="project-details no-bg">
