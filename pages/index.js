@@ -36,7 +36,7 @@ const MyWorkShell = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 92px);
 `;
 
 const PictureContainer = styled.div`
