@@ -45,7 +45,7 @@ const PictureContainer = styled.div`
   text-align: center;
   overflow: hidden;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   img {
     width: 438px;
