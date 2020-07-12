@@ -44,7 +44,9 @@ export function LightMenu({ active }) {
   return (
     <TopBarContainer>
       <Logo>
-        <img src="/img/logo.svg" />
+        <Link href="/">
+          <img src="/img/logo.svg" />
+        </Link>
       </Logo>
       <LightBGMenu>
         <Menu active={active} />
@@ -56,6 +58,10 @@ export function LightMenu({ active }) {
 const Logo = styled.div`
   width: 50%;
   margin: 35px 0 0 90px;
+  z-index: 10;
+  & img {
+    cursor: pointer;
+  }
 `;
 
 const TopBarContainer = styled.div`
