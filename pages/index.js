@@ -36,7 +36,7 @@ const MyWorkShell = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
 `;
 
 const PictureContainer = styled.div`
@@ -44,10 +44,12 @@ const PictureContainer = styled.div`
   max-height: 800px;
   text-align: center;
   overflow: hidden;
+  display: flex;
+  align-items: end;
+  justify-content: center;
   img {
-    margin-top: -35px;
-    width: 638px;
-    height: 800px;
+    width: 438px;
+    height: 477.5px
   }
 `;
 
@@ -58,7 +60,7 @@ export default function MyWork() {
       <DarkMenu active="index" />
       <MyWorkShell>
         <PictureContainer>
-          <img src="/img/Landing-top.png" />
+          <img src="/img/Landing-top@2x.png" />
         </PictureContainer>
         <MyWorkContainer>
           <ul>
