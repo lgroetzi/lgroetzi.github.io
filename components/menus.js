@@ -60,7 +60,7 @@ const TopBarContainer = styled.div`
 `;
 
 const MenuLink = styled.a`
-  font-family: Open Sans;
+  font-family: Open Sans, Arial, Helvetica, Sans-Serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;

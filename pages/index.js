@@ -6,7 +6,7 @@ import { DarkMenu } from '../components/menus';
 import { Head } from '../components/head';
 
 const MyWorkLink = styled.a`
-  font-family: Cabin;
+  font-family: Cabin, Arial, Helvetica, Sans-Serif;
   font-style: normal;
   font-weight: bold;
   font-size: 80px;

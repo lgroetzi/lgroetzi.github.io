@@ -1,12 +1,16 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import React from 'react';
 
+
 class CustomDocument extends Document {
   render() {
     return (
       <html lang="en">
         <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Open+Sans&family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+          <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Open+Sans&family=Open+Sans:wght@700&display=swap" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Open+Sans&family=Open+Sans:wght@700&display=swap"
+                onLoad="this.media='all'"/>
         </Head>
         <body>
           <Main />
