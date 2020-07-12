@@ -33,6 +33,10 @@ const LightBGMenu = styled.div`
   & a {
     color: #08202a;
   }
+
+  & a:hover {
+    border-bottom: solid 4px #08202a;
+  }
 `;
 
 export function LightMenu({ active }) {
