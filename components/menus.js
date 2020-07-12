@@ -19,6 +19,9 @@ const DarkBGMenu = styled.div`
 export function DarkMenu({ active }) {
   return (
     <TopBarContainer>
+      <Logo style={{ margin: "35px auto 0 auto", textAlign: "center" }}>
+        <img src="/img/logo.svg" />
+      </Logo>
       <DarkBGMenu>
         <Menu active={active} />
       </DarkBGMenu>
