@@ -15,9 +15,18 @@ const MyWorkLink = styled.a`
   text-decoration: none;
   cursor: pointer;
 
+  transition: 0.3s;
+
   color: #B5F44B;
+  & :hover {
+    color: #ffffff;
+  }
+
   &.white {
     color: #ffffff;
+  }
+  &.white :hover {
+    color: #B5F44B;
   }
 `;
 
@@ -74,8 +83,8 @@ export default function MyWork() {
                 <MyWorkLink>justworks</MyWorkLink>
               </Link>
             </li>
-            <li><MyWorkLink href="#selfmade1.0" className="white">selfmade1.0</MyWorkLink></li>
-            <li><MyWorkLink href="#selfmade2.0" className="white">selfmade2.0</MyWorkLink></li>
+            <li><MyWorkLink href="#selfmade1.0">selfmade1.0</MyWorkLink></li>
+            <li><MyWorkLink href="#selfmade2.0">selfmade2.0</MyWorkLink></li>
           </ul>
         </MyWorkContainer>
       </MyWorkShell>
