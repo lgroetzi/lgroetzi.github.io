@@ -10,7 +10,7 @@ export default function Collabs() {
       <GlamourShot
         title="Collabs by SelfMade"
         role="VP of Product"
-        img="/img/Collabs-1.png"
+        img="/img/Collabs-1@2x.png"
       />
 
       <div className="project-feat">
@@ -22,7 +22,7 @@ export default function Collabs() {
 
       <Details>
         <div>
-          <img src="/img/Collabs-3.png" />
+          <img src="/img/Collabs-3@2x.png" />
         </div>
 
         <div>
@@ -38,11 +38,11 @@ export default function Collabs() {
         </div>
       </Details>
 
-      <Feat img="/img/Collabs-4.png" />
+      <Feat img="/img/Collabs-4@2x.png" />
 
       <Details>
         <div>
-          <img src="/img/Collabs-5.png" />
+          <img src="/img/Collabs-5@2x.png" />
         </div>
 
         <div>
