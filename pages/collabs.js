@@ -13,7 +13,12 @@ export default function Collabs() {
         img="/img/Collabs-1.png"
       />
 
-      <Feat img="/img/Collabs-2.png" />
+      <div className="project-feat">
+        <img
+          srcSet="img/Collabs-2.png, img/Collabs-2@2x.png 2x"
+          src="img/Collabs-2@2x.png"
+          alt="Collabs landing page" />
+      </div>
 
       <Details>
         <div>
