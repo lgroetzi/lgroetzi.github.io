@@ -21,6 +21,7 @@ export default function Justworks() {
       >
         <div>
           <img
+            className="box-shadow"
             width="387px"
             src="/img/JW-3@2x.png" />
         </div>
@@ -46,12 +47,19 @@ export default function Justworks() {
           paddingTop: "126px",
         }}
       >
-        <img src="/img/JW-4@2x.png" />
+        <img
+          className="box-shadow"
+          src="/img/JW-4@2x.png"
+        />
       </div>
 
-      <div className="project-details no-bg ">
+      <div
+        className="project-details no-bg"
+        style={{ paddingBottom: "90px" }}
+      >
         <div>
           <img
+            className="box-shadow"
             width="572px"
             src="/img/JW-5@2x.png" />
         </div>
@@ -72,6 +80,7 @@ export default function Justworks() {
       
       <div>
         <img
+          className="box-shadow"
           width="100%"
           src="/img/JW-6@2x.png" />
       </div>
