@@ -1,4 +1,6 @@
 import * as React from "react";
+import Link from 'next/link';
+
 import { LightMenu } from '../components/menus';
 import { GlamourShot, Feat, Details } from '../components/project'
 
@@ -60,7 +62,7 @@ export default function Collabs() {
       </Details>
 
       <div className="project-next">
-        <a href="#">View Next Project</a>
+        <Link href="/justworks">View Next Project</Link>
       </div>
 
     </div>
