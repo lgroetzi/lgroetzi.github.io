@@ -48,7 +48,13 @@ export default function Collabs() {
             src="/img/Collabs-5@2x.png" />
         </div>
 
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexFlow: "column",
+            justifyContent: "center",
+          }}
+        >
           <h1>The Goal</h1>
           <p>
             Our goal was to create a free tool that would funnel users into our paid product.
