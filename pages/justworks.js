@@ -13,14 +13,12 @@ export default function Justworks() {
         img="/img/JW-1@2x.png"
       />
 
-      <div>
-        <img
-          width="100%"
-          src="/img/JW-6@2x.png" />
-      </div>
       <Feat img="/img/JW-2@2x.png" />
 
-      <div className="project-details">
+      <div
+        className="project-details"
+        style={{ padding: "260px 90px 0 90px" }}
+      >
         <div>
           <img
             width="387px"
@@ -41,7 +39,13 @@ export default function Justworks() {
         </div>
       </div>
 
-      <div className="project-feat">
+      <div
+        className="project-feat"
+        style={{
+          marginTop: "-36px",
+          paddingTop: "126px",
+        }}
+      >
         <img src="/img/JW-4@2x.png" />
       </div>
 
@@ -72,7 +76,19 @@ export default function Justworks() {
           src="/img/JW-6@2x.png" />
       </div>
 
-      <Feat img="/img/JW-7@2x.png" />
+      <div
+        style={{
+          background: "#f2f2f2",
+          padding: "90px",
+          textAlign: "center",
+        }}
+      >
+        <img
+          className="box-shadow"
+          width="1100px"
+          src="/img/JW-7@2x.png"
+        />
+      </div>
 
       <div className="project-next">
         <a href="#">View Next Project</a>
