@@ -64,9 +64,8 @@ export default function Justworks() {
             src="/img/JW-5@2x.png" />
         </div>
 
-        <div>
+        <div style={{ marginRight: 0 }}>
           <h1>The Product</h1>
-
           <p>
             After redesigning the marketing page, we automated payroll setup and created online applications for healthcare quotes and workers’ comp.
           </p>
