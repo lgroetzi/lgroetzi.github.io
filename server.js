@@ -15,8 +15,8 @@ const PAGES_WE_HANDLE = [
 app.prepare().then(() => {
   const server = express()
 
-  PAGES_WE_HANDLE.forEach(page => server.get('/collabs', (req, res) =>
-    app.render(req, res, '/collabs', req.query)
+  PAGES_WE_HANDLE.forEach(page => server.get(page, (req, res) =>
+    app.render(req, res, page, req.query)
   ));
 
   server.all('*', (req, res) => handle(req, res));
