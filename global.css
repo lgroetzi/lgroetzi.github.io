@@ -17,8 +17,7 @@ body {
 
 .project-glamourshot {
     margin-top: -105px;
-    padding-top: 60px;
-    height: 695px;
+    padding: 60px 0 90px 0;
     display: flex;
     flex-direction: row;
     background: linear-gradient(-90deg, #c0d9dd 70%, #f2f2f2 70%);
