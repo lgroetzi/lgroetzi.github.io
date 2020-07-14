@@ -22,10 +22,11 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-plugin-styled-components": "^1.8.0",
+    "express": "^4.17.1"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
     "preexport": "npm run build",
     "export": "next export",
