@@ -8,7 +8,7 @@ export default function Justworks() {
       <LightMenu />
 
       <GlamourShot
-        title="Coming Soon"
+        title="Coming Soon..."
         role="Lead Designer"
         img="/img/Selfmade-FILLER.png"
       />

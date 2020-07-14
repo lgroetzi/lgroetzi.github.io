@@ -35,7 +35,7 @@ export default function Justworks() {
 
           <h1>The Challenge</h1>
           <p>
-            Given higher churn with small companies, we needed to onboard them at a low cost. Justworks’ onboarding involves complex forms (e.g. employee censuses). Our challenge was to build a fully automated onboarding flow that would make onboarding small companes profitable.
+            Given higher churn with small companies, we needed to onboard them at a low cost. Justworks’ onboarding involves complex forms (e.g. employee censuses). Our challenge was to build a fully automated onboarding flow that would make onboarding small companies worthwhile.
           </p>
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function Justworks() {
 
           <h1>The Outcome</h1>
           <p>
-            Over the course of 4 months we grew the platform from 0 to over 3,000 users without paid marketing. 5% of Collabs users signed up for our paid product. Collabs proved an effective acquisition funnel and a valuable tool in its own right.
+          With the launch of our redesigned pricing page, we tripled the number of signups. With our streamlined, self-serve onboarding flow, we increased the setup completion rate of new users from 23% to 44%.
           </p>
         </div>
       </div>

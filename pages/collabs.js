@@ -27,12 +27,12 @@ export default function Collabs() {
         <div>
           <h1>The Opportunity</h1>
           <p>
-            It’s difficult and expensive to stand out as an ecommerce brand. Collaboration allows brands with a small audience and budget to expand their reach by joining forces with other brands.
+            It’s difficult and expensive to stand out as an e-commerce brand. Collaboration allows brands with a small audience and budget to expand their reach by joining forces with other brands.
           </p>
 
           <h1>The Product</h1>
           <p>
-            Collabs is SelfMade’s free tool, which allows brands to discover potential marketing partnerships, learn effective collaboration techniques (e.g. Instagram giveaway) and save time using our tools.
+            Collabs is SelfMade’s free tool, which allows brands to discover potential marketing partnerships, learn effective collaboration techniques (e.g. Instagram giveaway) and save time implementing those techniques.
           </p>
         </div>
       </Details>
@@ -57,7 +57,7 @@ export default function Collabs() {
         >
           <h1>The Goal</h1>
           <p>
-            Our goal was to create a free tool that would funnel users into our paid product.
+            Our goal was to create a free tool that would introduce e-commerce brands to SelfMade, and ultimately drive interest towards our paid marketing product.
           </p>
 
           <h1>The Outcome</h1>
