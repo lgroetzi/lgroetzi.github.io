@@ -15,11 +15,10 @@ const MyWorkLink = styled.a`
   text-decoration: none;
   cursor: pointer;
 
-  transition: 0.3s;
-
   color: #B5F44B;
   & :hover {
     color: #ffffff;
+    transition: 0.3s;
   }
 
   &.white {
