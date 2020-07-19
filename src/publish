@@ -1,4 +1,4 @@
 #!/bin/bash
-rsync -avz --delete --exclude=".git" out/ ..
+rsync -rvzc --delete --exclude="/.git" --exclude="/src" out/ ..
 git add ..
 git commit -m "Update static website"
