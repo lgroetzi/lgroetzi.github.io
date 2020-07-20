@@ -65,9 +65,14 @@ export function DarkMenu({ active }) {
   return (
     <TopBarContainer>
       <Logo
-        style={{ margin: "35px auto 0 auto", textAlign: "center" }}
         id="logo-container"
         ref={logoRefCallback}
+        style={{
+          width: "70px",
+          height: "70px",
+          margin: "35px auto 0 auto",
+          textAlign: "center",
+        }}
       >        
       </Logo>
       <DarkBGMenu>
@@ -107,8 +112,7 @@ export function LightMenu({ active }) {
 }
 
 const Logo = styled.div`
-  width: 70px;
-  height: 70px;
+  width: 50%;
   margin: 35px 0 0 90px;
   z-index: 10;
   & img {
