@@ -2,6 +2,7 @@
 rsync -rvzc --delete \
       --exclude="/.gitignore" \
       --exclude="/.git" \
+      --exclude="/.nojekyll" \
       --exclude="/src" \
       out/ ..
 git add ..
