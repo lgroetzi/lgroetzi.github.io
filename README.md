@@ -26,4 +26,5 @@ following command to publish to Github pages:
 ```bash
 cd src
 npm run publish
+git push
 ```
