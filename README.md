@@ -1,5 +1,15 @@
 # 2020 - New portfolio Baby
 
+## If you use nvm
+
+Please run the following command before running any of the commands
+bellow:
+
+```bash
+cd src
+nvm use
+```
+
 ## Install dependencies
 
 You only to do it once, or when the dependencies in the file
