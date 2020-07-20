@@ -14,6 +14,9 @@ class CustomDocument extends Document {
           <link rel="icon" type="image/png" sizes="16x16" href="/img/icon-16.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png" />
           <link rel="icon" type="image/png" sizes="64x64" href="/img/icon-64.png" />
+
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script type="text/javascript" src="/js/lazy-line-painter.min.js"></script>
         </Head>
         <body>
           <Main />

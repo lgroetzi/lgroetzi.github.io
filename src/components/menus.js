@@ -17,10 +17,58 @@ const DarkBGMenu = styled.div`
 `;
 
 export function DarkMenu({ active }) {
+  const logoRefCallback = React.useCallback(node => {
+    if (node !== null) {
+      const svgData = {
+        [node.id]: {
+          "strokepath": [
+            {
+              "path": "M134.727,134.248L29.466,3.921c-1.907-2.622-2.536-3.367-4.447-3.367   H4.094C0.031,0.581-0.321,3.957,1.712,6.262l132.741,164.702c1.765,1.878,4.137,1.299,5.251-0.088l86.788-108.153   c1.914-2.708,0.706-5.357-3.043-5.365l-17.65-0.007c-3.834,0-4.693,0.187-5.509,1.126l-60.832,75.717   C137.419,136.232,135.409,135.097,134.727,134.248",
+              "duration": 600,
+            },
+            {
+              "path": "M140.828,57.404c-3.376-0.039-3.692-0.841-3.755-3.307V40.993   c-0.057-2.208-0.102-3.63,2.832-3.642h49.719c3.354,0.014,4.338,3.129,2.793,5.072l-52.731,64.981   c-0.977,1.242-3.639,2.129-5.529,0L52.691,6.658c-2.522-2.965-0.89-6.256,2.674-6.108L220.737,0.5   c1.978-0.044,3.742,1.998,1.958,4.29l-10.874,13.283c-1.421,1.826-1.664,2.528-4.636,2.528L96.043,20.619   c-5.181-0.01-5.38,0.936-2.673,4.495l41.143,50.936c1.306,1.585,3.556,1.507,4.748,0.026l11.313-14.038   c1.502-2.186,3.28-4.988-2.359-4.634H140.828z",
+              "duration": 1000,
+            }
+          ],
+          "dimensions": {
+            "width": 228,
+            "height": 173,
+          }
+        }
+      };
+
+      function fillPaths() {
+        const logoPaths = $('svg path', node);
+        $.each(logoPaths, function(index, value) {
+          $(value).animate({
+            'fill-opacity': '1'
+          }, 1000, function() {
+          });
+        });
+      }
+
+      const $node = $(node);
+
+      $node.lazylinepainter({
+        'svgData': svgData,
+        'strokeWidth': 3,
+        'strokeColor': '#434343',
+        'delay': 300,
+        'speedMultiplier': 1.8,
+        'onComplete': fillPaths
+      });
+      $node.lazylinepainter('paint');
+    }
+  }, []);
+
   return (
     <TopBarContainer>
-      <Logo style={{ margin: "35px auto 0 auto", textAlign: "center" }}>
-        <img src="/img/logo.svg" />
+      <Logo
+        style={{ margin: "35px auto 0 auto", textAlign: "center" }}
+        id="logo-container"
+        ref={logoRefCallback}
+      >        
       </Logo>
       <DarkBGMenu>
         <Menu active={active} />
@@ -59,7 +107,8 @@ export function LightMenu({ active }) {
 }
 
 const Logo = styled.div`
-  width: 50%;
+  width: 70px;
+  height: 70px;
   margin: 35px 0 0 90px;
   z-index: 10;
   & img {
