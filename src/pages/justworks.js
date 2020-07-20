@@ -1,4 +1,6 @@
 import * as React from "react";
+import Link from 'next/link';
+
 import { LightMenu } from '../components/menus';
 import { GlamourShot, Feat } from '../components/project'
 
