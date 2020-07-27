@@ -101,7 +101,7 @@ export default function Justworks() {
       </div>
 
       <div className="project-next">
-        <Link><a href="/collabs">View Next Project</a></Link>
+        <Link href="/collabs"><a>View Next Project</a></Link>
       </div>
 
     </div>

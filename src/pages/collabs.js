@@ -68,7 +68,7 @@ export default function Collabs() {
       </Details>
 
       <div className="project-next">
-        <Link href="/justworks">View Next Project</Link>
+        <Link href="/justworks"><a>View Next Project</a></Link>
       </div>
 
     </div>
