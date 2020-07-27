@@ -167,6 +167,7 @@ function Menu({ active }) {
             className={active == "resume" ? "active" : null}
             href="https://www.linkedin.com/in/laura-groetzinger-b0857b21/"
             target="_blank"
+            rel="noreferrer"
           >
             my resume
           </MenuLink>
@@ -178,6 +179,7 @@ function Menu({ active }) {
             className={active == "sidegig" ? "active" : null}
             href="https://www.instagram.com/pinkandsalt/"
             target="_blank"
+            rel="noreferrer"
           >
              my side gig
           </MenuLink>
