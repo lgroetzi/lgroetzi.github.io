@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from 'styled-components';
 import Link from 'next/link';
+import { getResponsiveness } from '../lib/media-query'
 
 const DarkBGMenu = styled.div`
   width: 50%;
@@ -62,6 +63,8 @@ export function DarkMenu({ active }) {
     }
   }, []);
 
+  const r = getResponsiveness();
+
   return (
     <TopBarContainer>
       <Logo
@@ -75,9 +78,10 @@ export function DarkMenu({ active }) {
         }}
       >        
       </Logo>
-      <DarkBGMenu>
-        <Menu active={active} />
-      </DarkBGMenu>
+      {r.isMobile ||
+       <DarkBGMenu>
+         <Menu active={active} />
+       </DarkBGMenu>}
     </TopBarContainer>
   );
 }
