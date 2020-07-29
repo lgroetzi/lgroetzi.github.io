@@ -7,7 +7,6 @@ import { Head } from '../components/head';
 
 import { getResponsiveness, responsiveClasses } from '../lib/media-query';
 
-
 const MyWorkLink = styled.a`
   font-family: Cabin, Arial, Helvetica, Sans-Serif;
   font-style: normal;

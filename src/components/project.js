@@ -1,16 +1,19 @@
 import * as React from "react";
+import { getResponsiveness, responsiveClasses } from '../lib/media-query';
 
 export function GlamourShot({ title, role, img }) {
+  const r = getResponsiveness();
+  const className = `project-glamourshot ${responsiveClasses(r)}`
+
   return (
-    <div className="project-glamourshot">
+    <div className={className}>
       <div>
         <h1>{title}</h1>
         <div className="project-subtitle">
           My Role: <strong>{role}</strong>
         </div>
       </div>
-
-      <img src={img} className="box-shadow"/>
+      {!r.isMobile && <img src={img} className="box-shadow"/>}
     </div>
   );
 }

@@ -4,24 +4,33 @@ import Link from 'next/link';
 import { LightMenu } from '../components/menus';
 import { GlamourShot, Feat, Details } from '../components/project'
 
+import { getResponsiveness, responsiveClasses } from '../lib/media-query'
+
 export default function Collabs() {
+  const r = getResponsiveness();
+  const className = responsiveClasses(r);
   return (
     <div className="project-page">
-      <LightMenu />
+      {!r.isMobile && <LightMenu />}
 
       <GlamourShot
+        className={className}
         title="Collabs by SelfMade"
         role="VP of Product"
         img="/img/Collabs-1@2x.png"
       />
 
-      <Feat img="/img/Collabs-2@2x.png" />
-      
-      <Details>
+      {!r.isMobile && <Feat img="/img/Collabs-2@2x.png" />}
+
+      {/* r.isMobile && <Feat img="/img/Collabs-2@2x.png" /> */}
+
+      <Details className={className}>
         <div style={{ textAlign: "right", margin: "50px 110px 0 80px" }}>
+          {/*
           <img
             width="465px"
             src="/img/Collabs-3@2x.png" />
+           */}
         </div>
 
         <div>
