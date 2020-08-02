@@ -66,6 +66,7 @@ export default function Collabs() {
             display: "flex",
             flexFlow: "column",
             justifyContent: "center",
+            marginBottom: r.isMobile || "135px",
           }}
         >
           <h1>The Goal</h1>
