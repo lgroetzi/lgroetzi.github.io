@@ -11,7 +11,7 @@ export default function Collabs() {
   const className = responsiveClasses(r);
 
   return (
-    <div className="project-page" style={{ width: '100%', backgroundColor: "red" }}>
+    <div className="project-page" style={{ width: '100%' }}>
       {!r.isMobile && <LightMenu />}
 
       <GlamourShot
