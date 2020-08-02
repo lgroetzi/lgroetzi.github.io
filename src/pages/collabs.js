@@ -26,7 +26,7 @@ export default function Collabs() {
 
       <Details>
         {!r.isMobile &&
-         <div style={{ textAlign: "right", margin: "50px 110px 0 80px" }}>
+         <div>
            <img
              width="465px"
              src="/img/Collabs-3@2x.png" />
@@ -53,7 +53,7 @@ export default function Collabs() {
 
       <Details className="no-bg">
         {!r.isMobile &&
-         <div style={{ textAlign: "right", margin: "30px 162px 100px 18px" }}>
+         <div>
            <img
              className="box-shadow"
              width="387px"

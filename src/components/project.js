@@ -149,11 +149,25 @@ export function Feat({ img, style, color }) {
 
 const DetailsStyled = styled.div`
   background: linear-gradient(90deg, #c0d9dd 50%, #f2f2f2 50%);
-  display: flex;
-  flex-direction: row;
-  padding-top: 260px;
+  padding-top: 290px;
   width: 100%;
+
+  & .container {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    margin: auto;
+  }
+
+  & .container > div {
+    width: 550px;
+    margin: 0 auto;
+  }
   
+  & .container > div:nth-child(2) {
+    padding-left: 110px;
+  }
+
   &.mobile {
     display: block;
     padding: 60px;
@@ -162,11 +176,6 @@ const DetailsStyled = styled.div`
 
   &.mobile img {
     width: 100%;
-  }
-
-  & > div {
-    width: 50%;
-    margin: 0 90px;
   }
 
   &.mobile > div {
@@ -186,6 +195,7 @@ const DetailsStyled = styled.div`
     line-height: 40px;
     letter-spacing: 0.583333px; /* identical to box height, or 114% */
     color: #08202A;
+    margin-top: 0;
   }
   
   & p {
@@ -201,8 +211,10 @@ export function Details(props) {
   const r = getResponsiveness();
   const className = `${responsiveClasses(r)} ${props.className || ''}`;
   return (
-    <DetailsStyled className={className}>
-      {props.children}
+    <DetailsStyled className={className} style={ props.style || {} }>
+      <div class="container">
+        {props.children}
+      </div>
     </DetailsStyled>
   );
 }
