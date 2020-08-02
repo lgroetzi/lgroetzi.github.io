@@ -102,7 +102,7 @@ export function GlamourShot({ title, role, img }) {
       </div>
 
       {!r.isMobile &&
-       <div class="img">
+       <div className="img">
          <img src={img} className="box-shadow"/>
        </div>}
     </GlamourShotStyled>
@@ -212,7 +212,7 @@ export function Details(props) {
   const className = `${responsiveClasses(r)} ${props.className || ''}`;
   return (
     <DetailsStyled className={className} style={ props.style || {} }>
-      <div class="container">
+      <div className="container">
         {props.children}
       </div>
     </DetailsStyled>
