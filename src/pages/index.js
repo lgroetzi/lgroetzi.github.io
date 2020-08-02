@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import { DarkMenu } from '../components/menus';
 import { Head } from '../components/head';
+import { Chevron } from '../components/project';
 
 import { getResponsiveness, responsiveClasses } from '../lib/media-query';
 
@@ -146,17 +147,6 @@ const MobileLinks = styled.ul`
     font-style: normal;
     color: #c0d9dd;
   }
-`;
-
-const Chevron = styled.div`
-  display: inline-block;
-  margin: 15px 0 0 15px;
-  float: right;
-  border-right: 4px solid #08202a;
-  border-bottom: 4px solid #08202a;
-  width: 30px;
-  height: 30px;
-  transform: rotate(-45deg);
 `;
 
 const MobileLink = styled.a`
