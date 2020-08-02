@@ -56,8 +56,12 @@ const GlamourShotStyled = styled.div`
     color: #3270df;
   }
 
+  & .img {
+    width: 100%;
+    text-align: center;
+  }
+
   & img {
-    display: block;
     margin-top: 95px;
     height: 464px;
     max-width: 680px;
@@ -97,7 +101,10 @@ export function GlamourShot({ title, role, img }) {
         </div>
       </div>
 
-      {!r.isMobile && <img src={img} className="box-shadow"/>}
+      {!r.isMobile &&
+       <div class="img">
+         <img src={img} className="box-shadow"/>
+       </div>}
     </GlamourShotStyled>
   );
 }
