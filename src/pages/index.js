@@ -204,7 +204,7 @@ export default function MyWork() {
                rel="noreferrer"
              >
                linkedIn
-               <Chevron />
+               <Chevron className={className} />
              </MobileLink>
            </Link>
          </li>
@@ -216,7 +216,7 @@ export default function MyWork() {
                rel="noreferrer"
              >
                side gig
-               <Chevron />
+               <Chevron className={className} />
              </MobileLink>
            </Link>
          </li>

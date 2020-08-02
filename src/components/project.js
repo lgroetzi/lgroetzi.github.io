@@ -222,13 +222,21 @@ export function Details(props) {
 
 export const Chevron = styled.div`
   display: inline-block;
-  margin: 5% 0;
+  margin: 1% 0;
   float: right;
-  border-right: 4px solid #08202a;
-  border-bottom: 4px solid #08202a;
-  width: 30px;
-  height: 30px;
+  border-right: 8px solid #08202a;
+  border-bottom: 8px solid #08202a;
+  width: 60px;
+  height: 60px;
   transform: rotate(-45deg);
+
+  &.mobile {
+    width: 30px;
+    height: 30px;
+    margin: 6% 0;
+    border-right: 5px solid #08202a;
+    border-bottom: 5px solid #08202a;
+  }
 `;
 
 const NextStyled = styled.div`
@@ -262,7 +270,7 @@ export function Next({ link }) {
     <NextStyled className={className}>
       <Link href={link}><a>
         {r.isMobile ? "next" : "View Next Project"}
-        <Chevron />
+        <Chevron className={className} />
       </a></Link>
     </NextStyled>
   );
