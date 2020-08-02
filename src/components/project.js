@@ -150,6 +150,7 @@ export function Feat({ img, style, color }) {
 const DetailsStyled = styled.div`
   background: linear-gradient(90deg, #c0d9dd 50%, #f2f2f2 50%);
   padding-top: 290px;
+  padding-bottom: 90px;
   width: 100%;
 
   & .container {
