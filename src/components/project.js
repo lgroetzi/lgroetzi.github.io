@@ -14,7 +14,7 @@ const GlamourShotStyled = styled.div`
   &.mobile {
     background: #fff;
     margin-top: 0px;
-    height: 480px;
+    height: 470px;
     display: table-cell;
     vertical-align: bottom;
   }
