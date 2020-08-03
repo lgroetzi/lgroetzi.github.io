@@ -74,14 +74,6 @@ const GlamourShotStyled = styled.div`
     right: -60px;
     text-align: right;
   }
-  &.mobile div.close a {
-    font-size: 70px;
-    font-family: Open Sans ;
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: none;
-    color: #c0d9dd;
-  }
 `;
 
 export function GlamourShot({ title, role, img }) {
