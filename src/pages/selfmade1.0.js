@@ -31,9 +31,10 @@ export default function ComingSoon() {
         img="/img/Selfmade-FILLER.png"
       />
 
-      <ComingSoonStyled>
-        Coming Soon...
-      </ComingSoonStyled>
+      {r.isMobile &&
+       <ComingSoonStyled>
+         Coming Soon...
+       </ComingSoonStyled>}
 
       <Next link="/collabs" />
     </div>
