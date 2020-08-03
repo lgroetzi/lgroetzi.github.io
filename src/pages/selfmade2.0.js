@@ -1,23 +1,5 @@
 import * as React from "react";
-import Link from 'next/link';
-import { LightMenu } from '../components/menus';
-import { GlamourShot } from '../components/project'
 
-export default function Justworks() {
-  return (
-    <div className="project-page">
-      <LightMenu />
+import ComingSoon from "./selfmade1.0";
 
-      <GlamourShot
-        title="Coming Soon..."
-        role="Lead Designer"
-        img="/img/Selfmade-FILLER.png"
-      />
-
-      <div className="project-next">
-        <Link href="/collabs">View Next Project</Link>
-      </div>
-
-    </div>
-  );
-}
+export default ComingSoon;
