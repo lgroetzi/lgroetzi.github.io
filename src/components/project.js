@@ -61,7 +61,7 @@ const GlamourShotStyled = styled.div`
     text-align: center;
   }
 
-  & img {
+  & .img img {
     margin-top: 95px;
     height: 464px;
     max-width: 680px;
@@ -91,7 +91,7 @@ export function GlamourShot({ title, role, img }) {
     <GlamourShotStyled className={className}>
       {r.isMobile &&
        <div className="close">
-         <Link href="/"><a>x</a></Link>
+         <Link href="/"><a><img src="/img/x.svg" width="32px" height="32px" /></a></Link>
        </div>}
 
       <div>
