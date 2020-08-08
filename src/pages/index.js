@@ -170,7 +170,7 @@ export default function MyWork() {
 
         {r.isMobile &&
          <MobileCover>
-           <div className="who">Laura Groetzinegr</div>
+           <div className="who">Laura Groetzinger</div>
            <div className="what">Product Design</div>
          </MobileCover>}
 
