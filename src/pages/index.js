@@ -60,7 +60,7 @@ const MyWorkShell = styled.div`
 
   &.mobile > div {
     width: 100%;
-    font-size: 50px;
+    font-size: 49px;
     line-height: 65px;
   }
 
@@ -96,6 +96,7 @@ const RecentProjects = styled.div`
   font-weight: bold;
   font-size: 14px;
   line-height: 40px;
+  letter-spacing: 1px;
 `;
 
 const MobileCover = styled.div`
@@ -125,7 +126,7 @@ const MobileLinks = styled.ul`
   font-family: Cabin;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 49px;
   line-height: 60px;
   letter-spacing: 2px; /* identical to box height, or 100% */
 
@@ -135,9 +136,10 @@ const MobileLinks = styled.ul`
 
   & li.reach-me {
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 30px;
     background-color: #08202a;
+    letter-spacing: 1px;
   }
   & li.reach-me a {
     color: #FFFFFF;
@@ -223,7 +225,7 @@ export default function MyWork() {
            <MobileLink
              href="mailto:laura.groetzinger@gmail.com"
            >
-             reach me at
+             Reach me at
              <address>laura.groetzinger@gmail.com</address>
            </MobileLink>
          </li>
