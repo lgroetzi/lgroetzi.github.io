@@ -16,18 +16,11 @@ const MyWorkLink = styled.a`
   letter-spacing: 0.833333px;  /* or 137% */
   text-decoration: none;
   cursor: pointer;
-
   color: #B5F44B;
-  & :hover {
-    color: #ffffff;
-    transition: 0.3s;
-  }
 
-  &.white {
+  &:hover {
     color: #ffffff;
-  }
-  &.white :hover {
-    color: #B5F44B;
+    transition: 0.6s;
   }
 `;
 
