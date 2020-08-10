@@ -28,6 +28,12 @@ const MyWorkContainer = styled.div`
   background-color: #08202a;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+
+  &.mobile {
+    display: block;
+  }
   ul {
     list-style: none;
     margin: 0;
@@ -167,7 +173,7 @@ export default function MyWork() {
            <div className="what">Product Design</div>
          </MobileCover>}
 
-        <MyWorkContainer>
+        <MyWorkContainer className={className}>
           {r.isMobile &&
            <RecentProjects>Recent Projects</RecentProjects>}
           <ul>
