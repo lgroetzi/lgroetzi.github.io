@@ -40,7 +40,7 @@ export default function ComingSoon() {
          <img src="/img/blueprint.svg" />
        </ComingSoonStyled>}
 
-      <Next link="/collabs" />
+      <Next link="/collabs" extraClass="orange" />
     </div>
   );
 }

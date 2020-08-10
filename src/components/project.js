@@ -254,6 +254,10 @@ const NextStyled = styled.div`
     background-color: #fae8d1;
   }
 
+  &.orange {
+    background-color: #fae8d1;
+  }
+
   & a {
     font-family: Cabin;
     font-style: normal;
@@ -268,9 +272,9 @@ const NextStyled = styled.div`
   }
 `;
 
-export function Next({ link }) {
+export function Next({ link, extraClass }) {
   const r = getResponsiveness();
-  const className = responsiveClasses(r);
+  const className = `${responsiveClasses(r)} ${extraClass}`;
   return (
     <NextStyled className={className}>
       <Link href={link}>
