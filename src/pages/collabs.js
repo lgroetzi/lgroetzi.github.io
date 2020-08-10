@@ -32,13 +32,13 @@ export default function Collabs() {
              src="/img/Collabs-3@2x.png" />
          </div>}
         
-        <div className="text">
+        <div>
           <h1>The Opportunity</h1>
-          <p>
+          <p className="bottom-spacing">
             It’s difficult and expensive to stand out as an e-commerce brand. Collaboration allows brands with a small audience and budget to expand their reach by joining forces with other brands.
           </p>
 
-          {r.isMobile && <img src="/img/Collabs-2_Mobile.png" />}
+          {r.isMobile && <img src="/img/Collabs-2_Mobile.png" className="special-case-spacing" />}
 
           <h1>The Product</h1>
           <p>
@@ -70,7 +70,7 @@ export default function Collabs() {
           }}
         >
           <h1>The Goal</h1>
-          <p>
+          <p className="bottom-spacing">
             Our goal was to create a free tool that would introduce e-commerce brands to SelfMade, and ultimately drive interest towards our paid marketing product.
           </p>
           <h1>The Outcome</h1>

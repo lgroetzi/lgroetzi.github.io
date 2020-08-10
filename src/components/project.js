@@ -198,6 +198,19 @@ const DetailsStyled = styled.div`
     color: #414141;
     padding-bottom: 50px;
   }
+
+  &.mobile p {
+    padding: 0;
+    margin: 0;
+  }
+
+  &.mobile .bottom-spacing {
+    margin-bottom: 60px;
+  }
+
+  &.mobile .special-case-spacing {
+    margin: -20px 0 40px 0;
+  }
 `;
 
 export function Details(props) {

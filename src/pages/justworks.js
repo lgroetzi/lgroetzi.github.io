@@ -34,7 +34,7 @@ export default function Justworks() {
 
         <div>
           <h1>The Business</h1>
-          <p>
+          <p className="bottom-spacing">
             Justworks provides simple software for payroll, benefits, HR, and compliance.
           </p>
 
@@ -63,7 +63,7 @@ export default function Justworks() {
 
         <div>
           <h1>The Product</h1>
-          <p>
+          <p className="bottom-spacing">
             After redesigning the marketing page, we automated payroll setup and created online applications for healthcare quotes and workers’ comp.
           </p>
           <h1>The Outcome</h1>
