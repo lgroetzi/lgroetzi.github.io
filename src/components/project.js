@@ -239,8 +239,8 @@ export const Chevron = styled.div`
     width: 30px;
     height: 30px;
     margin: 6% 0;
-    border-right: 5px solid #08202a;
-    border-bottom: 5px solid #08202a;
+    border-right: 8px solid #08202a;
+    border-bottom: 8px solid #08202a;
   }
 `;
 

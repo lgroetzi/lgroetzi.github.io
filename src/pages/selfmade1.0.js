@@ -16,6 +16,10 @@ const ComingSoonStyled = styled.div`
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
+  & img {
+    width: 180px;
+    opacity: 50%;
+  }
 `;
 
 export default function ComingSoon() {
@@ -33,7 +37,7 @@ export default function ComingSoon() {
 
       {r.isMobile &&
        <ComingSoonStyled>
-         Coming Soon...
+         <img src="/img/blueprint.svg" />
        </ComingSoonStyled>}
 
       <Next link="/collabs" />
