@@ -18,7 +18,7 @@ const ComingSoonStyled = styled.div`
   font-size: 28px;
   & img {
     width: 180px;
-    opacity: 30%;
+    opacity: 20%;
   }
 `;
 
