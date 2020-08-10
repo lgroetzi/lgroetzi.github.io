@@ -273,10 +273,14 @@ export function Next({ link }) {
   const className = responsiveClasses(r);
   return (
     <NextStyled className={className}>
-      <Link href={link}><a>
-        {r.isMobile ? "next" : "View Next Project"}
-        <Chevron className={className} />
-      </a></Link>
+      <Link href={link}>
+        <a>
+          <div>
+            {r.isMobile ? "next" : "View Next Project"}
+            <Chevron className={className} />
+          </div>
+        </a>
+      </Link>
     </NextStyled>
   );
 }
