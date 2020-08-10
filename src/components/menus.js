@@ -89,6 +89,7 @@ export function DarkMenu({ active }) {
 const LightBGMenu = styled.div`
   width: 50%;
   background-color: transparent;
+  z-index: 10;
 
   & a {
     color: #08202a;
