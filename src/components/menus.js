@@ -106,7 +106,7 @@ export function LightMenu({ active }) {
     <TopBarContainer>
       <Logo>
         <Link href="/">
-          <img src="/img/logo.svg" />
+          <img src="/img/logo.svg" width="71" height="53" />
         </Link>
       </Logo>
       <LightBGMenu>
@@ -121,7 +121,14 @@ const Logo = styled.div`
   margin: 35px 0 0 90px;
   z-index: 10;
   & img {
+    transition-duration: .3s;
+    transition-property: width;
     cursor: pointer;
+  }
+
+  &:hover img {
+    width: 65px;
+    transition: 0.3s;
   }
 `;
 
