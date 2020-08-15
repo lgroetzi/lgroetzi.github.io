@@ -44,7 +44,6 @@ const GlamourShotStyled = styled.div`
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.333333px; /* identical to box height, or 100% */
-    color: #08202A;
     padding-left: 90px;
   }
 
@@ -53,7 +52,7 @@ const GlamourShotStyled = styled.div`
   }
 
   & div.project-subtitle strong {
-    color: #3270df;
+    color: #95B7BC;
   }
 
   & .img {
