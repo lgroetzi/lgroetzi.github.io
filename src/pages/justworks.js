@@ -49,7 +49,7 @@ export default function Justworks() {
       </Details>
 
       { r.isMobile
-        ? <img src="/img/Justworks-2_Mobile.png" style={{ maxWidth: "calc(100% + 120px)" }} />
+        ? <img src="/img/Justworks-2_Mobile.png" style={{ maxWidth: "100%" }} />
         : <Feat img="/img/JW-4@2x.png" style={{
           marginTop: "-94px",
           paddingTop: "126px",

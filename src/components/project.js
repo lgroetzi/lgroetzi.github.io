@@ -25,7 +25,7 @@ const GlamourShotStyled = styled.div`
     font-weight: bold;
     font-size: 78px;
     line-height: 84px;
-    width: 400px;
+    max-width: 400px;
     letter-spacing: 1.3px;  /* or 108% */
     color: #08202A;
     padding: 185px 0 0 90px;
@@ -67,11 +67,9 @@ const GlamourShotStyled = styled.div`
   }
 
   &.mobile div.close {
-    width: 100%;
     position: absolute;
     top: 60px;
-    right: -60px;
-    text-align: right;
+    right: 60px;
   }
 `;
 
@@ -111,6 +109,7 @@ const FeatStyled = styled.div`
   }
 
   &.mobile {
+    width: calc(100% - 120px);
     padding: 60px;
     height: auto;
   }
@@ -163,6 +162,7 @@ const DetailsStyled = styled.div`
   &.mobile {
     display: block;
     padding: 60px;
+    width: calc(100% - 120px);
     background: #fff;
   }
 
@@ -253,7 +253,7 @@ const NextStyled = styled.div`
   }
 
   &.mobile {
-    width: 100%;
+    width: calc(100% - 120px);
     padding: 60px;
     background-color: #fae8d1;
   }
