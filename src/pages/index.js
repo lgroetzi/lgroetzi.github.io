@@ -108,7 +108,8 @@ const MobileCover = styled.div`
   font-weight: bold;
   line-height: 140px;
 
-  background: url(/img/Landing-top@2x.png) no-repeat 130% 100%;
+  background: url(/img/Landing-top@2x.png) no-repeat;
+  background-position: right -52.5px bottom;
   background-size: 200px;
 
   & .who {
