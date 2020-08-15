@@ -198,35 +198,37 @@ export default function MyWork() {
       {r.isMobile &&
        <MobileLinks>
          <li style={{ backgroundColor: '#F2F2F2' }}>
-           <Link href="/resume">
-             <MobileLink
-               href="https://www.linkedin.com/in/laura-groetzinger-b0857b21/"
-               target="_blank"
-               rel="noreferrer"
-             >
+           <MobileLink
+             href="https://www.linkedin.com/in/laura-groetzinger-b0857b21/"
+             target="_blank"
+             rel="noreferrer"
+           >
+             <div>
                linkedIn
                <Chevron className={className} />
-             </MobileLink>
-           </Link>
+             </div>
+           </MobileLink>
          </li>
          <li style={{ backgroundColor: '#C0D9DD' }}>
-           <Link href="/sidegig">
-             <MobileLink
-               href="https://www.instagram.com/pinkandsalt/"
-               target="_blank"
-               rel="noreferrer"
-             >
+           <MobileLink
+             href="https://www.instagram.com/pinkandsalt/"
+             target="_blank"
+             rel="noreferrer"
+           >
+             <div>
                side gig
                <Chevron className={className} />
-             </MobileLink>
-           </Link>
+             </div>
+           </MobileLink>
          </li>
          <li className="reach-me">
            <MobileLink
              href="mailto:laura.groetzinger@gmail.com"
            >
-             Reach me at
-             <address>laura.groetzinger@gmail.com</address>
+             <div>
+               Reach me at
+               <address>laura.groetzinger@gmail.com</address>
+             </div>
            </MobileLink>
          </li>
        </MobileLinks>}
