@@ -247,6 +247,11 @@ export const Chevron = styled.div`
 const NextStyled = styled.div`
   padding: 90px;
   background-color: #c0d9dd;
+  transition: 0.4s;
+
+  &:hover, &:active {
+    background-color: #fae8d1;
+  }
 
   &.mobile {
     width: 100%;
@@ -256,6 +261,10 @@ const NextStyled = styled.div`
 
   &.orange {
     background-color: #fae8d1;
+  }
+
+  &.orange:hover, &:active {
+    background-color: #F5DDBD;
   }
 
   & a {

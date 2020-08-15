@@ -180,7 +180,7 @@ function Menu({ active }) {
           target="_blank"
           rel="noreferrer"
         >
-          my resume
+          my linkedIn
         </MenuLink>
       </li>
       <li>
