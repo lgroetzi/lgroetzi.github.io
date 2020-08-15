@@ -1,6 +1,7 @@
 import * as React from "react";
 import Link from 'next/link';
 
+import { Head } from '../components/head';
 import { LightMenu } from '../components/menus';
 import { GlamourShot, Feat, Details, Next } from '../components/project';
 
@@ -12,6 +13,8 @@ export default function Collabs() {
 
   return (
     <div className="project-page" style={{ width: '100%' }}>
+      <Head title="Laura Groetzinger Portfolio - Collabs" />
+
       {!r.isMobile && <LightMenu />}
 
       <GlamourShot

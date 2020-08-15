@@ -1,6 +1,7 @@
 import * as React from "react";
 import Link from 'next/link';
 
+import { Head } from '../components/head';
 import { LightMenu } from '../components/menus';
 import { GlamourShot, Feat, Details, Next } from '../components/project';
 
@@ -11,6 +12,8 @@ export default function Justworks() {
   const className = responsiveClasses(r);
   return (
     <div className="project-page">
+      <Head title="Laura Groetzinger Portfolio - Justworks" />
+
       {!r.isMobile && <LightMenu />}
 
       <GlamourShot

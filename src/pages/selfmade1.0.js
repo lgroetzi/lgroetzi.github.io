@@ -2,6 +2,7 @@ import * as React from "react";
 import Link from 'next/link';
 import styled from 'styled-components';
 
+import { Head } from '../components/head';
 import { LightMenu } from '../components/menus';
 import { GlamourShot, Next } from '../components/project'
 import { getResponsiveness, responsiveClasses } from '../lib/media-query';
@@ -27,6 +28,7 @@ export default function ComingSoon() {
   const className = responsiveClasses(r);
   return (
     <div className="project-page" style={{ width: "100%" }}>
+      <Head title="Laura Groetzinger Portfolio - Selfmade" />
       {!r.isMobile && <LightMenu />}
 
       <GlamourShot
