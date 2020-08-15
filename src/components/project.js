@@ -6,7 +6,7 @@ import { getResponsiveness, responsiveClasses } from '../lib/media-query';
 
 const GlamourShotStyled = styled.div`
   margin-top: -105px;
-  padding: 60px 0 90px 0;
+  padding: 150px 0 70px 0;
   display: flex;
   flex-direction: row;
   background: linear-gradient(-90deg, #c0d9dd 70%, #f2f2f2 70%);
@@ -14,7 +14,6 @@ const GlamourShotStyled = styled.div`
   &.mobile {
     background: #fff;
     margin-top: 0px;
-    height: 470px;
     display: table-cell;
     vertical-align: bottom;
   }
@@ -33,8 +32,9 @@ const GlamourShotStyled = styled.div`
   }
 
   &.mobile h1 {
-    font-size: 78px;
-    padding: 0 0 0 60px;
+    font-size: 64px;
+    line-height: 75px;
+    padding: 0 0 0 30px;
   }
 
   & div.project-subtitle {
@@ -48,7 +48,7 @@ const GlamourShotStyled = styled.div`
   }
 
   &.mobile div.project-subtitle {
-    padding-left: 60px;
+    padding-left: 30px;
   }
 
   & div.project-subtitle strong {
@@ -68,8 +68,8 @@ const GlamourShotStyled = styled.div`
 
   &.mobile div.close {
     position: absolute;
-    top: 60px;
-    right: 60px;
+    top: 30px;
+    right: 30px;
   }
 `;
 
@@ -109,8 +109,8 @@ const FeatStyled = styled.div`
   }
 
   &.mobile {
-    width: calc(100% - 120px);
-    padding: 60px;
+    width: calc(100% - 60px);
+    padding: 30px;
     height: auto;
   }
 
@@ -161,8 +161,8 @@ const DetailsStyled = styled.div`
 
   &.mobile {
     display: block;
-    padding: 60px;
-    width: calc(100% - 120px);
+    width: calc(100% - 60px);
+    padding: 30px;
     background: #fff;
   }
 
@@ -253,8 +253,8 @@ const NextStyled = styled.div`
   }
 
   &.mobile {
-    width: calc(100% - 120px);
-    padding: 60px;
+    width: calc(100% - 60px);
+    padding: 30px;
     background-color: #fae8d1;
   }
 
