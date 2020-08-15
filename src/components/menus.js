@@ -174,28 +174,24 @@ function Menu({ active }) {
         </Link>
       </li>
       <li>
-        <Link href="/resume">
-          <MenuLink
-            className={active == "resume" ? "active" : null}
-            href="https://www.linkedin.com/in/laura-groetzinger-b0857b21/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            my resume
-          </MenuLink>
-        </Link>
+        <MenuLink
+          className={active == "resume" ? "active" : null}
+          href="https://www.linkedin.com/in/laura-groetzinger-b0857b21/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          my resume
+        </MenuLink>
       </li>
       <li>
-        <Link href="/sidegig">
-          <MenuLink
-            className={active == "sidegig" ? "active" : null}
-            href="https://www.instagram.com/pinkandsalt/"
-            target="_blank"
-            rel="noreferrer"
-          >
-             my side gig
-          </MenuLink>
-        </Link>
+        <MenuLink
+          className={active == "sidegig" ? "active" : null}
+          href="https://www.instagram.com/pinkandsalt/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          my side gig
+        </MenuLink>
       </li>
     </MenuList>
   );
