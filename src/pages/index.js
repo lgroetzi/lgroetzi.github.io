@@ -151,10 +151,24 @@ const MobileLinks = styled.ul`
   }
 `;
 
-const MobileLink = styled.a`
+const MobileLinkStyled = styled.a`
   color: #08202A;
   text-decoration: none;
 `;
+
+function MobileLink(props) {
+  const { href, target, rel, text } = props;
+  const r = getResponsiveness();
+  const className = responsiveClasses(r);
+  return (
+    <MobileLinkStyled href={href} target={target} rel={rel}>
+      <div style={{ display: "flex" }}>
+        <div style={{ flexGrow: 1, margin: "auto" }}>{props.children}</div>
+        <Chevron className={className} />
+      </div>
+    </MobileLinkStyled>
+  );
+}
 
 export default function MyWork() {
   const r = getResponsiveness();
@@ -204,10 +218,7 @@ export default function MyWork() {
              target="_blank"
              rel="noreferrer"
            >
-             <div>
-               linkedIn
-               <Chevron className={className} />
-             </div>
+             linkedIn
            </MobileLink>
          </li>
          <li style={{ backgroundColor: '#C0D9DD' }}>
@@ -216,20 +227,15 @@ export default function MyWork() {
              target="_blank"
              rel="noreferrer"
            >
-             <div>
-               side gig
-               <Chevron className={className} />
-             </div>
+             side gig
            </MobileLink>
          </li>
          <li className="reach-me">
            <MobileLink
              href="mailto:laura.groetzinger@gmail.com"
            >
-             <div>
-               Reach me at
-               <address>laura.groetzinger@gmail.com</address>
-             </div>
+             Reach me at
+             <address>laura.groetzinger@gmail.com</address>
            </MobileLink>
          </li>
        </MobileLinks>}
