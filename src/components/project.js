@@ -162,7 +162,7 @@ const DetailsStyled = styled.div`
   &.mobile {
     display: block;
     width: calc(100% - 60px);
-    padding: 30px;
+    padding: 60px 30px;
     background: #fff;
   }
 
