@@ -67,7 +67,7 @@ export function DarkMenu({ active }) {
 
   return (
     <TopBarContainer>
-      <Logo
+      <LogoContainer
         id="logo-container"
         ref={logoRefCallback}
         style={{
@@ -76,8 +76,7 @@ export function DarkMenu({ active }) {
           margin: "35px auto 0 auto",
           textAlign: "center",
         }}
-      >        
-      </Logo>
+      />
       {r.isMobile ||
        <DarkBGMenu>
          <Menu active={active} />
@@ -104,11 +103,11 @@ const LightBGMenu = styled.div`
 export function LightMenu({ active }) {
   return (
     <TopBarContainer>
-      <Logo>
+      <LogoContainer>
         <Link href="/">
-          <img src="/img/logo.svg" width="71" height="53" />
+          <Logo />
         </Link>
-      </Logo>
+      </LogoContainer>
       <LightBGMenu>
         <Menu active={active} />
       </LightBGMenu>
@@ -117,19 +116,26 @@ export function LightMenu({ active }) {
 }
 
 const Logo = styled.div`
+  width: 71px;
+  height: 53px;
+  cursor: pointer;
+
+  mask: url(/img/logo.svg);
+  mask-size: cover;
+  background-color: #08202a;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+
+  &:hover {
+    background-color: #4d788a;
+    transition: 0.3s;
+  }
+`;
+
+const LogoContainer = styled.div`
   width: 50%;
   margin: 35px 0 0 90px;
   z-index: 10;
-  & img {
-    transition-duration: .3s;
-    transition-property: width;
-    cursor: pointer;
-  }
-
-  &:hover img {
-    width: 65px;
-    transition: 0.3s;
-  }
 `;
 
 const TopBarContainer = styled.div`
