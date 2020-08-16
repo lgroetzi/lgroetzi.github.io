@@ -84,19 +84,14 @@ export default function Justworks() {
              width="100%"
              src="/img/JW-6@2x.png" />
          </div>
-         <div
+         <Feat
+           img="/img/JW-7@2x.png"
            style={{
              background: "#f2f2f2",
-             padding: "90px",
-             textAlign: "center",
+             height: "auto",
+             paddingBottom: "95px"
            }}
-         >
-           <img
-             className="box-shadow"
-             width="1100px"
-             src="/img/JW-7@2x.png"
-           />
-         </div>
+         />
        </div>}
 
       {r.isMobile &&
