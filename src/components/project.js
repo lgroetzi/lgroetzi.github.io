@@ -237,7 +237,7 @@ export const Chevron = styled.div`
   &.mobile {
     width: 30px;
     height: 30px;
-    margin: 6% 0;
+    margin: auto;
     border-right: 8px solid #08202a;
     border-bottom: 8px solid #08202a;
   }
@@ -287,8 +287,10 @@ export function Next({ link, extraClass }) {
     <NextStyled className={className}>
       <Link href={link}>
         <a>
-          <div>
-            {r.isMobile ? "next" : "View Next Project"}
+          <div style={{ display: "flex" }}>
+            <div style={{ flexGrow: 1, marginTop: r.isMobile ? -8 : 0 }}>
+              {r.isMobile ? "next" : "View Next Project"}
+            </div>
             <Chevron className={className} />
           </div>
         </a>
