@@ -10,8 +10,8 @@ import { getResponsiveness, responsiveClasses } from '../lib/media-query';
 const ComingSoonStyled = styled.div`
   background-color: #c0d9dd;
   color: #666;
-  width: 100%;
-  padding: 130px 60px;
+  width: calc(100% - 60px);
+  padding: 130px 30px;
   text-align: center;
   font-family: Cabin;
   font-style: normal;
