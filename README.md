@@ -1,4 +1,4 @@
-# 2020 - New portfolio Baby
+# 2020 - New Portfolio Baby
 
 ## If you use nvm
 
