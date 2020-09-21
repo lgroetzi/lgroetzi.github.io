@@ -30,6 +30,7 @@ const MyWorkContainer = styled.div`
   padding: 0;
   display: flex;
   align-items: center;
+  overflow-y: scroll;
 
   &.mobile {
     display: block;
@@ -91,10 +92,10 @@ const PictureContainer = styled.div`
 const AboutMe = styled.div`
   padding: 60px;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 16px;
   margin: 35px 50px 0 0;
   color: #ffffff;
-  line-height: 36px;
+  line-height: 32px;
   
   & .haiku {
     border-left: solid 2px #5d5d62;
@@ -109,6 +110,9 @@ const AboutMe = styled.div`
     text-decoration: underline;
   }
   
+  & p {
+    margin-bottom: 30px;
+  }
   
   &.mobile {
     margin: 0;
@@ -148,7 +152,7 @@ export default function MyWork() {
         <MyWorkContainer className={className}>
           <AboutMe className={className}>
             <p>
-              For those who find “About Me” blurbs boring, here’s a haiku: 
+              For those who find these bios boring, here’s a haiku...
             </p>
             <p className="haiku">
               Curious humans<br />
@@ -156,7 +160,7 @@ export default function MyWork() {
               And here, I enter
             </p>
             <p>
-              In the unlikely event that the poem didn’t tell you all you need to know, here’s a bit more: I like making life simple through design. I’m a problem solver with strong intuition about what users need, based on a decade of experience. I have an analytical mind, a big heart and a passion for markdown. User happiness is at the forefront of my work, but I also get pretty freaking excited about design systems.
+              In the unlikely event that the poem didn’t tell you everything you need to know, here’s a bit more: I like making life simple through design. I’m a problem solver with strong intuition about what users need, based on a decade of experience. I have an analytical mind, a big heart and a passion for markdown. User happiness is at the forefront of my work, but I also get pretty freaking excited about design systems.
             </p>
             <p>
               After working as the VP of Product at SelfMade, I was eager to focus my attention back towards product design. Today, I'm thrilled to be designing interfaces at Tremendous.com.
