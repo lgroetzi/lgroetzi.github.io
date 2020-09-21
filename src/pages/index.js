@@ -34,6 +34,9 @@ const MyWorkContainer = styled.div`
   &.mobile {
     display: block;
   }
+  &.mobile > ul {
+    padding: 0 30px 50px 30px;
+  }
   ul {
     list-style: none;
     margin: 0;
@@ -90,7 +93,7 @@ const PictureContainer = styled.div`
 
 const RecentProjects = styled.div`
   color: #ffffff;
-  padding: 50px 50px 0 50px;
+  padding: 50px 30px 0 30px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -100,8 +103,8 @@ const RecentProjects = styled.div`
 `;
 
 const MobileCover = styled.div`
-  padding: 40px;
-  width: calc(100% - 80px) !important;
+  padding: 40px 30px;
+  width: calc(100% - 60px) !important;
 
   font-family: Open Sans;
   font-style: normal;
@@ -132,7 +135,7 @@ const MobileLinks = styled.ul`
   line-height: 60px;
 
   & li {
-    padding: 40px;
+    padding: 30px;
   }
 
   & li.reach-me {
