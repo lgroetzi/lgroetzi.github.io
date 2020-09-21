@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { DarkMenu } from '../components/menus';
 import { Head } from '../components/head';
-import { Chevron } from '../components/project';
+import { Chevron, GlamourShot } from '../components/project';
 
 import { getResponsiveness, responsiveClasses } from '../lib/media-query';
 
@@ -88,98 +88,45 @@ const PictureContainer = styled.div`
   }
 `;
 
-const RecentProjects = styled.div`
-  color: #ffffff;
-  padding: 50px 50px 0 50px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 40px;
-  letter-spacing: 1px;
-`;
-
-const MobileCover = styled.div`
-  padding: 40px;
-  width: calc(100% - 80px) !important;
-
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 140px;
-
-  background: url(/img/Landing-top@2x.png) no-repeat;
-  background-position: right -52.5px bottom;
-  background-size: 200px;
-
-  & .who {
-    font-size: 14px;
-    display: inline;
-    border-bottom: 4px solid #b5f44b;
-  }
-`;
-
-const MobileLinks = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  font-family: Cabin;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 49px;
-  line-height: 60px;
-  letter-spacing: 2px; /* identical to box height, or 100% */
-
-  & li {
-    padding: 40px;
-  }
-
-  & li.reach-me {
-    font-family: Open Sans;
-    font-size: 15px;
-    line-height: 30px;
-    background-color: #08202a;
-    letter-spacing: 1px;
-  }
-  & li.reach-me a {
-    color: #FFFFFF;
-  }
-  & li.reach-me address {
-    font-style: normal;
-    color: #c0d9dd;
-  }
-`;
-
-const MobileLinkStyled = styled.a`
-  color: #08202A;
-  text-decoration: none;
-`;
-
 const AboutMe = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 0;
+  padding: 60px;
+  font-family: Open Sans;
+  font-size: 20px;
   margin: 35px 50px 0 0;
   color: #ffffff;
-  font-size: 14px;
-  line-height: 24px;
+  line-height: 36px;
+  
+  & .haiku {
+    border-left: solid 2px #5d5d62;
+    padding: 0 0 0 20px;
+  }
+  
+  & a {
+    color: #b5f44b;
+    text-decoration: none;
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  &.mobile {
+    margin: 0;
+    padding: 30px;
+  }
+  &.mobile div.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
 `;
 
-function MobileLink(props) {
-  const { href, target, rel, text } = props;
-  const r = getResponsiveness();
-  const className = responsiveClasses(r);
-  return (
-    <MobileLinkStyled href={href} target={target} rel={rel}>
-      <div style={{ display: "flex" }}>
-        <div style={{ flexGrow: 1, margin: "auto" }}>{props.children}</div>
-        <Chevron className={className} />
-      </div>
-    </MobileLinkStyled>
-  );
-}
+const Override = styled.div`
+  & > div {
+    padding-bottom: 20px;
+  }
+`;
 
 export default function MyWork() {
   const r = getResponsiveness();
@@ -188,28 +135,34 @@ export default function MyWork() {
   return (
     <div>
       <Head title="Laura Groetzinger Portfolio" />
-      <DarkMenu active="aboutme" />
+      {!r.isMobile && <DarkMenu active="aboutme" />}
+
       <MyWorkShell className={className}>
+        {r.isMobile && <Override><GlamourShot title="About Me" /></Override>}
+
         {!r.isMobile &&
          <PictureContainer>
            <img src="/img/Landing-top@2x.png" />
          </PictureContainer>}
-         <MyWorkContainer className={className}>
-          <AboutMe>
+
+        <MyWorkContainer className={className}>
+          <AboutMe className={className}>
             <p>
               For those who find “About Me” blurbs boring, here’s a haiku: 
             </p>
-            <p>
-              Curious humans
-              Trying to speak to machines
+            <p className="haiku">
+              Curious humans<br />
+              Trying to speak to machines<br/>
               And here, I enter
             </p>
             <p>
               In the unlikely event that the poem didn’t tell you all you need to know, here’s a bit more: I like making life simple through design. I’m a problem solver with strong intuition about what users need, based on a decade of experience. I have an analytical mind, a big heart and a passion for markdown. User happiness is at the forefront of my work, but I also get pretty freaking excited about design systems.
-
+            </p>
+            <p>
               After working as the VP of Product at SelfMade, I was eager to focus my attention back towards product design. Today, I'm thrilled to be designing interfaces at Tremendous.com.
-
-              What’s next for me? I’m open to remote senior design roles and design leadership positions – both full time and contract. Working on something wonderful? Let’s chat! Reach me at laura.groetzinger@gmail.com
+            </p>
+            <p>
+              What’s next for me? I’m open to remote senior design roles and design leadership positions – both full time and contract. Working on something wonderful? Let’s chat! Reach me at <a href="mailto:laura.groetzinger@gmail.com">laura.groetzinger@gmail.com</a>
             </p>
           </AboutMe>
         </MyWorkContainer>

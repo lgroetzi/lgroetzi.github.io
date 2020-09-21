@@ -213,6 +213,13 @@ export default function MyWork() {
       {r.isMobile &&
        <MobileLinks>
          <li style={{ backgroundColor: '#F2F2F2' }}>
+           <Link href="/aboutme">
+             <MobileLink href="/aboutme" >
+               about me
+             </MobileLink>
+           </Link>
+         </li>
+         <li style={{ backgroundColor: '#C0D9DD' }}>
            <MobileLink
              href="https://www.linkedin.com/in/laura-groetzinger-b0857b21/"
              target="_blank"
@@ -221,7 +228,7 @@ export default function MyWork() {
              linkedIn
            </MobileLink>
          </li>
-         <li style={{ backgroundColor: '#C0D9DD' }}>
+         <li style={{ backgroundColor: '#F2F2F2' }}>
            <MobileLink
              href="https://www.instagram.com/pinkandsalt/"
              target="_blank"

@@ -85,9 +85,10 @@ export function GlamourShot({ title, role, img }) {
 
       <div>
         <h1>{title}</h1>
-        <div className="project-subtitle">
-          My Role: <strong>{role}</strong>
-        </div>
+        {role &&
+         <div className="project-subtitle">
+           My Role: <strong>{role}</strong>
+         </div>}
       </div>
 
       {!r.isMobile &&
