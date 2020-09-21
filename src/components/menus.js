@@ -10,6 +10,7 @@ const DarkBGMenu = styled.div`
   & a {
     color: #fff;
     cursor: pointer;
+    transition: 0.2s;
   }
 
   & a.active, & a:hover {
@@ -93,6 +94,7 @@ const LightBGMenu = styled.div`
   & a {
     color: #08202a;
     cursor: pointer;
+    transition: 0.2s;
   }
 
   & a:hover {
@@ -145,7 +147,7 @@ const TopBarContainer = styled.div`
 `;
 
 const MenuLink = styled.a`
-  font-family: Open Sans, Arial, Helvetica, Sans-Serif;
+  font-family: "Open Sans", Arial, Helvetica, Sans-Serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;

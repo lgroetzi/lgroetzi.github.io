@@ -96,7 +96,7 @@ const RecentProjects = styled.div`
   font-weight: bold;
   font-size: 14px;
   line-height: 40px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 `;
 
 const MobileCover = styled.div`
@@ -113,9 +113,10 @@ const MobileCover = styled.div`
   background-size: 200px;
 
   & .who {
-    font-size: 14px;
+    font-size: 15px;
     display: inline;
     border-bottom: 4px solid #b5f44b;
+    letter-spacing: 1px;
   }
 `;
 
@@ -129,7 +130,6 @@ const MobileLinks = styled.ul`
   font-weight: bold;
   font-size: 49px;
   line-height: 60px;
-  letter-spacing: 2px; /* identical to box height, or 100% */
 
   & li {
     padding: 40px;
@@ -148,6 +148,7 @@ const MobileLinks = styled.ul`
   & li.reach-me address {
     font-style: normal;
     color: #c0d9dd;
+    letter-spacing: 1.2px; /* identical to box height, or 100% */
   }
 `;
 
