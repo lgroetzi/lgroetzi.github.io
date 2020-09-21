@@ -180,13 +180,22 @@ function Menu({ active }) {
         </Link>
       </li>
       <li>
+        <Link href="/aboutme">
+          <MenuLink
+            className={active == "aboutme" ? "active" : null}
+          >
+            about me
+          </MenuLink>
+        </Link>
+      </li>
+      <li>
         <MenuLink
           className={active == "resume" ? "active" : null}
           href="https://www.linkedin.com/in/laura-groetzinger-b0857b21/"
           target="_blank"
           rel="noreferrer"
         >
-          my linkedIn
+          linkedIn
         </MenuLink>
       </li>
       <li>
@@ -196,7 +205,7 @@ function Menu({ active }) {
           target="_blank"
           rel="noreferrer"
         >
-          my side gig
+          side gig
         </MenuLink>
       </li>
     </MenuList>
