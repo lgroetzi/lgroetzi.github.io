@@ -70,7 +70,7 @@ const MyWorkShell = styled.div`
 `;
 
 const PictureContainer = styled.div`
-  max-height: 800px;
+  max-height: 659px;
   text-align: center;
   overflow: hidden;
   display: flex;

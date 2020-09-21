@@ -30,7 +30,6 @@ const MyWorkContainer = styled.div`
   padding: 0;
   display: flex;
   align-items: center;
-  overflow-y: scroll;
 
   &.mobile {
     display: block;
@@ -71,7 +70,7 @@ const MyWorkShell = styled.div`
 `;
 
 const PictureContainer = styled.div`
-  max-height: 800px;
+  max-height: 659px;
   text-align: center;
   overflow: hidden;
   display: flex;
@@ -90,13 +89,13 @@ const PictureContainer = styled.div`
 `;
 
 const AboutMe = styled.div`
-  padding: 60px;
+  padding: 0 60px;
   font-family: Open Sans;
   font-size: 16px;
   margin: 35px 50px 0 0;
   color: #ffffff;
   line-height: 32px;
-  
+
   & .haiku {
     border-left: solid 2px #5d5d62;
     padding: 0 0 0 20px;
