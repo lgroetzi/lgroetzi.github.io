@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { Head } from '../components/head';
 import { LightMenu } from '../components/menus';
-import { GlamourShot, Feat, Details, Next } from '../components/project';
+import { GlamourShot, Feat, Details, Next, FadeIn } from '../components/project';
 
 import { getResponsiveness, responsiveClasses } from '../lib/media-query';
 
@@ -29,10 +29,12 @@ export default function Justworks() {
       <Details>
         {!r.isMobile &&
          <div>
-           <img
-             className="box-shadow"
-             width="387px"
-             src="/img/JW-3@2x.png" />
+           <FadeIn>
+             <img
+               className="box-shadow"
+               width="387px"
+               src="/img/JW-3@2x.png" />
+           </FadeIn>
          </div>}
 
         <div>
@@ -49,7 +51,7 @@ export default function Justworks() {
       </Details>
 
       { r.isMobile
-        ? <img src="/img/Justworks-2_Mobile.png" style={{ maxWidth: "100%" }} />
+        ? <FadeIn><img src="/img/Justworks-2_Mobile.png" style={{ maxWidth: "100%" }} /></FadeIn>
         : <Feat img="/img/JW-4@2x.png" style={{
           marginTop: "-94px",
           paddingTop: "126px",
@@ -58,10 +60,12 @@ export default function Justworks() {
       <Details className="no-bg">
         {!r.isMobile &&
          <div>
-           <img
-             className="box-shadow"
-             width="572px"
-             src="/img/JW-5@2x.png" />
+           <FadeIn>
+             <img
+               className="box-shadow"
+               width="572px"
+               src="/img/JW-5@2x.png" />
+           </FadeIn>
          </div>}
 
         <div>
@@ -79,10 +83,12 @@ export default function Justworks() {
       {!r.isMobile &&
        <div>
          <div>
-           <img
-             className="box-shadow"
-             width="100%"
-             src="/img/JW-6@2x.png" />
+           <FadeIn>
+             <img
+               className="box-shadow"
+               width="100%"
+               src="/img/JW-6@2x.png" />
+           </FadeIn>
          </div>
          <Feat
            img="/img/JW-7@2x.png"

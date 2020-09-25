@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { Head } from '../components/head';
 import { LightMenu } from '../components/menus';
-import { GlamourShot, Feat, Details, Next } from '../components/project';
+import { GlamourShot, Feat, Details, Next, FadeIn } from '../components/project';
 
 import { getResponsiveness, responsiveClasses } from '../lib/media-query';
 
@@ -30,9 +30,11 @@ export default function Collabs() {
       <Details>
         {!r.isMobile &&
          <div>
-           <img
-             width="465px"
-             src="/img/Collabs-3@2x.png" />
+           <FadeIn>
+             <img
+               width="465px"
+               src="/img/Collabs-3@2x.png" />
+           </FadeIn>
          </div>}
         
         <div>
@@ -41,7 +43,10 @@ export default function Collabs() {
             It’s difficult and expensive to stand out as an e-commerce brand. Collaboration allows brands with a small audience and budget to expand their reach by joining forces with other brands.
           </p>
 
-          {r.isMobile && <img src="/img/Collabs-2_Mobile.png" className="special-case-spacing" />}
+          {r.isMobile &&
+           <FadeIn>
+             <img src="/img/Collabs-2_Mobile.png" className="special-case-spacing" />
+           </FadeIn>}
 
           <h1>The Product</h1>
           <p>
@@ -57,11 +62,13 @@ export default function Collabs() {
       <Details className="no-bg">
         {!r.isMobile &&
          <div>
-           <img
-             className="box-shadow"
-             width="387px"
-             height="660px"
-             src="/img/Collabs-5@2x.png" />
+           <FadeIn>
+             <img
+               className="box-shadow"
+               width="387px"
+               height="660px"
+               src="/img/Collabs-5@2x.png" />
+           </FadeIn>
          </div> }
         
         <div

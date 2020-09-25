@@ -1,8 +1,42 @@
 import * as React from "react";
 import Link from 'next/link';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazyload';
 
 import { getResponsiveness, responsiveClasses } from '../lib/media-query';
+
+const FadeInShell = styled.div`
+  opacity: 0;
+
+  &.loaded {
+     opacity: 1;
+     transition: opacity 1.5s;
+  }
+`;
+
+const FadeInTransition = ({ children }) => {
+  const [loaded, setLoaded] = React.useState(false);
+
+  React.useEffect(() => {
+    setLoaded(true);
+  });
+
+  return (
+    <FadeInShell className={loaded ? "loaded" : null}>
+      {children}
+    </FadeInShell>
+  )
+};
+
+export const FadeIn = ({ height, children }) => {
+  return (
+    <LazyLoad height={height}>
+      <FadeInTransition>
+        {children}
+      </FadeInTransition>
+    </LazyLoad>
+  )
+};
 
 const GlamourShotStyled = styled.div`
   margin-top: -105px;
@@ -93,7 +127,9 @@ export function GlamourShot({ title, role, img }) {
 
       {!r.isMobile &&
        <div className="img">
-         <img src={img} className="box-shadow"/>
+         <FadeIn height={464}>
+           <img src={img} className="box-shadow"/>
+         </FadeIn>
        </div>}
     </GlamourShotStyled>
   );
@@ -133,7 +169,9 @@ export function Feat({ img, style, color }) {
   const className = `${responsiveClasses(r)} ${color || ''}`;
   return (
     <FeatStyled className={className} style={ style || {} }>
-      <img src={img} className="box-shadow"/>
+      <FadeIn>
+        <img src={img} className="box-shadow"/>
+      </FadeIn>
     </FeatStyled>
   );
 }
