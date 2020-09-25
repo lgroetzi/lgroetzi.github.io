@@ -73,11 +73,10 @@ const MyWorkShell = styled.div`
 `;
 
 const PictureContainer = styled.div`
-  max-height: 659px;
   text-align: center;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   img {
     width: 438px;
