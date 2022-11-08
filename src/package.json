@@ -15,7 +15,7 @@
     "url": "git+https://github.com/lgroetzi/lgroetzi.github.io.git"
   },
   "dependencies": {
-    "next": "^9.4.4",
+    "next": "^13.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-lazyload": "^3.0.0",
